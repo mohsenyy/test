@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>نام شرکت شما</title>
+<meta name="description" content="معرفی شرکت و خدمات">
+<meta name="theme-color" content="#12263A">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#12263A;--paper:#F7F9FB;--sun:#F2B134;--sea:#1F7A8C;--mute:#5B6B7B;--line:#D9E1E8}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:Vazirmatn,Tahoma,sans-serif;background:var(--paper);color:var(--ink);line-height:1.9;padding-bottom:env(safe-area-inset-bottom,0)}
+header{position:sticky;top:0;z-index:5;background:var(--ink);color:var(--paper);padding:env(safe-area-inset-top,0) 20px 0}
+nav{display:flex;align-items:center;justify-content:space-between;height:56px;max-width:960px;margin:auto}
+nav b{font-weight:800}
+nav div{display:flex;gap:18px;font-size:.95rem}
+a{color:inherit}
+nav a{text-decoration:none;opacity:.85}
+nav a:hover,nav a:focus-visible{opacity:1;color:var(--sun)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.hero{background:var(--ink);color:var(--paper);padding:64px 20px 80px}
+.wrap{max-width:960px;margin:auto}
+.hero h1{font-size:clamp(2.2rem,8vw,4.2rem);font-weight:800;line-height:1.35;max-width:14ch}
+.hero p{margin:20px 0 32px;max-width:46ch;opacity:.85;font-size:1.1rem}
+.btn{display:inline-block;background:var(--sun);color:var(--ink);font:600 1rem Vazirmatn,Tahoma,sans-serif;padding:10px 24px;border:0;border-radius:6px;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--paper);border:1.5px solid var(--paper);margin-inline-start:10px}
+#install[hidden]{display:none}
+section{padding:56px 20px}
+h2{font-size:1.7rem;font-weight:800;margin-bottom:24px}
+.svc{list-style:none;padding:0;border-top:1.5px solid var(--ink)}
+.svc li{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;padding:18px 0;border-bottom:1px solid var(--line)}
+.svc strong{font-size:1.15rem;color:var(--sea)}
+.svc span{color:var(--mute);max-width:60ch}
+@media(min-width:640px){.svc li{grid-template-columns:220px 1fr;gap:24px}}
+.about{background:#fff;border-block:1px solid var(--line)}
+.about p{max-width:62ch}
+.facts{display:flex;flex-wrap:wrap;gap:28px;margin-top:28px}
+.facts div{border-inline-start:4px solid var(--sun);padding-inline-start:14px}
+.facts b{display:block;font-size:1.6rem}
+.facts small{color:var(--mute)}
+.contact address{font-style:normal;display:grid;gap:6px;margin-bottom:20px}
+footer{background:var(--ink);color:var(--paper);text-align:center;padding:20px;font-size:.9rem;opacity:.95}
+#update{position:fixed;inset-inline:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:9;background:var(--ink);color:var(--paper);border:2px solid var(--sun);border-radius:8px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:520px;margin-inline:auto}
+#update[hidden]{display:none}
+.ver{margin-top:8px;font-size:.85rem;opacity:.85}
+.linkbtn{background:none;border:0;color:var(--sun);font:inherit;text-decoration:underline;cursor:pointer;padding:0 6px}
+#offline{position:fixed;inset-inline:0;bottom:0;background:var(--sun);color:var(--ink);text-align:center;padding:6px;font-size:.9rem;transform:translateY(100%);transition:transform .2s}
+#offline.on{transform:none}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><nav class="wrap" aria-label="منوی اصلی">
+  <b>نام شرکت</b>
+  <div><a href="#services">خدمات</a><a href="#about">درباره ما</a><a href="#contact">تماس</a></div>
+</nav></header>
+
+<main>
+<div class="hero"><div class="wrap">
+  <h1>یک جمله روشن درباره کاری که انجام می‌دهید</h1>
+  <p>اینجا توضیح کوتاهی بنویسید که مشتری بفهمد شما چه مشکلی را برای او حل می‌کنید.</p>
+  <a class="btn" href="#contact">درخواست مشاوره</a>
+  <button class="btn ghost" id="install" hidden>نصب اپ</button>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <h2>خدمات ما</h2>
+  <ul class="svc">
+    <li><strong>خدمت اول</strong><span>توضیح یک یا دو جمله‌ای درباره این خدمت و نتیجه‌ای که مشتری می‌گیرد.</span></li>
+    <li><strong>خدمت دوم</strong><span>توضیح یک یا دو جمله‌ای درباره این خدمت و نتیجه‌ای که مشتری می‌گیرد.</span></li>
+    <li><strong>خدمت سوم</strong><span>توضیح یک یا دو جمله‌ای درباره این خدمت و نتیجه‌ای که مشتری می‌گیرد.</span></li>
+  </ul>
+</div></section>
+
+<section id="about" class="about"><div class="wrap">
+  <h2>درباره ما</h2>
+  <p>تاریخچه، تخصص و تفاوت شرکت خود را در چند جمله بنویسید.</p>
+  <div class="facts">
+    <div><b>۱۰+</b><small>سال تجربه</small></div>
+    <div><b>۲۰۰+</b><small>پروژه انجام‌شده</small></div>
+    <div><b>۵۰</b><small>همکار متخصص</small></div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2>تماس با ما</h2>
+  <address>
+    <span>آدرس: شهر، خیابان، پلاک</span>
+    <span>تلفن: <a href="tel:+989120000000" dir="ltr">+98 912 000 0000</a></span>
+    <span>ایمیل: <a href="mailto:info@example.com" dir="ltr">info@example.com</a></span>
+  </address>
+  <a class="btn" href="tel:+989120000000">تماس بگیرید</a>
+</div></section>
+</main>
+
+<footer>
+  <div>© نام شرکت شما</div>
+  <div class="ver">نسخه <span id="ver" dir="ltr">…</span>
+    <button class="linkbtn" id="check">بررسی به‌روزرسانی</button><span id="status" role="status"></span></div>
+</footer>
+<div id="update" role="alert" hidden>
+  <span>نسخه جدید آماده است.</span>
+  <button class="btn" id="apply">به‌روزرسانی</button>
+</div>
+<div id="offline" role="status">آفلاین هستید؛ نسخه ذخیره‌شده نمایش داده می‌شود.</div>
+
+<script>
+const verEl=document.getElementById('ver'),statusEl=document.getElementById('status');
+const updBox=document.getElementById('update');
+let reg,refreshing=false;
+fetch('version.json',{cache:'no-store'}).then(r=>r.json()).then(j=>{verEl.textContent=j.version}).catch(()=>{verEl.textContent='—'});
+function showUpdate(w){
+  updBox.hidden=false;
+  document.getElementById('apply').onclick=()=>w.postMessage({type:'SKIP_WAITING'});
+}
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{
+    if(refreshing)return;refreshing=true;location.reload();
+  });
+  addEventListener('load',()=>{
+    navigator.serviceWorker.register('sw.js').then(r=>{
+      reg=r;
+      if(r.waiting&&navigator.serviceWorker.controller)showUpdate(r.waiting);
+      r.addEventListener('updatefound',()=>{
+        const w=r.installing;
+        w.addEventListener('statechange',()=>{
+          if(w.state==='installed'&&navigator.serviceWorker.controller)showUpdate(w);
+        });
+      });
+      setInterval(()=>r.update().catch(()=>{}),60*60*1000);
+    }).catch(()=>{});
+  });
+  document.addEventListener('visibilitychange',()=>{
+    if(!document.hidden&&reg)reg.update().catch(()=>{});
+  });
+}
+document.getElementById('check').addEventListener('click',async()=>{
+  if(!reg){statusEl.textContent=' (در دسترس نیست)';return}
+  statusEl.textContent=' در حال بررسی…';
+  try{await reg.update()}catch(e){statusEl.textContent=' خطا در اتصال';return}
+  setTimeout(()=>{statusEl.textContent=(reg.waiting||reg.installing)?' نسخه جدید پیدا شد':' آخرین نسخه نصب است'},1200);
+});
+let deferred;
+const btn=document.getElementById('install');
+addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferred=e;btn.hidden=false});
+btn.addEventListener('click',async()=>{
+  if(!deferred)return;
+  deferred.prompt();await deferred.userChoice;deferred=null;btn.hidden=true;
+});
+addEventListener('appinstalled',()=>{btn.hidden=true});
+const off=document.getElementById('offline');
+const sync=()=>off.classList.toggle('on',!navigator.onLine);
+addEventListener('online',sync);addEventListener('offline',sync);sync();
+</script>
+</body>
+</html>
