@@ -1,5 +1,5 @@
 // نسخه را فقط با bump.sh عوض کنید تا version.json هم هماهنگ بماند
-const VERSION = '1.0.0';
+const VERSION = '1.0.2';
 const CACHE = `pouyasys-${VERSION}`;
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './version.json'];
 

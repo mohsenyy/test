@@ -1,7 +1,7 @@
 {
-  "name": "نام شرکت شما",
-  "short_name": "شرکت",
-  "description": "معرفی شرکت و خدمات",
+  "name": "آموزشگاه کامپیوتر و حسابداری پویا سامانه",
+  "short_name": "پویا سامانه",
+  "description": "آموزش کامپیوتر و حسابداری در گرگان، تحت نظارت سازمان فنی و حرفه‌ای کل کشور",
   "lang": "fa",
   "dir": "rtl",
   "start_url": "./index.html",
@@ -10,6 +10,11 @@
   "background_color": "#12263A",
   "theme_color": "#12263A",
   "icons": [
-    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
   ]
 }
